@@ -3,61 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./scss/styles.css" />
   </head>
   <body>
     <div class="sidebar">
       <div class="title">
         <div class="navs dashboard">
-          <img src="./Assets/view-dashboard.svg" alt="" />
+          <img src="./Assets/view-dashboard.svg" alt="Dashboard" />
           <p>Dashboard</p>
         </div>
       </div>
       <div>
         <div class="navs home">
-          <img src="./Assets/home-circle.svg" alt="" />
+          <img src="./Assets/home-circle.svg" alt="Home" />
           <p>Home</p>
         </div>
         <div class="navs profile">
-          <img src="./Assets/card-account-details-outline.svg" alt="" />
+          <img src="./Assets/card-account-details-outline.svg" alt="Profile" />
           <p>Profile</p>
         </div>
         <div class="navs messages">
-          <img src="./Assets/message.svg" alt="" />
+          <img src="./Assets/message.svg" alt="Messages" />
           <p>Messages</p>
         </div>
         <div class="navs history">
-          <img src="./Assets/clock-time-three-outline.svg" alt="" />
+          <img src="./Assets/clock-time-three-outline.svg" alt="History" />
           <p>History</p>
         </div>
         <div class="navs tasks">
-          <img src="./Assets/file-multiple-outline.svg" alt="" />
+          <img src="./Assets/file-multiple-outline.svg" alt="Tasks" />
           <p>Tasks</p>
         </div>
         <div class="navs communities">
-          <img src="./Assets/account-group.svg" alt="" />
+          <img src="./Assets/account-group.svg" alt="Communities" />
           <p>Communities</p>
         </div>
       </div>
       <div>
         <div class="navs settings">
-          <img src="./Assets/cog.svg" alt="" />
+          <img src="./Assets/cog.svg" alt="Settings" />
           <p>Settings</p>
         </div>
         <div class="navs support">
-          <img src="./Assets/help-box.svg" alt="" />
+          <img src="./Assets/help-box.svg" alt="Support" />
           <p>Support</p>
         </div>
         <div class="navs privacy">
-          <img src="./Assets/shield-check.svg" alt="" />
+          <img src="./Assets/shield-check.svg" alt="Privacy" />
           <p>Privacy</p>
         </div>
       </div>
     </div>
     <div class="header">
-      <div class="header-row-one"></div>
-      <div class="header-row-two"></div>
+      <div class="header-row-one">
+        <img src="./Assets/magnify.svg" alt="search" />
+        <input type="text" name="search-bar" id="search-bar" />
+        <img src="./Assets/bell-ring.svg" alt="notifications" />
+        <img src="./Assets/close-up-cat-sitting.jpg" alt="profile-image" />
+        <p>Morgan Oakley</p>
+      </div>
+      <div class="header-row-two">
+        <img src="./Assets/close-up-cat-sitting.jpg" alt="profile-image" />
+        <div class="welcome">
+          <p class="welcome-text">Hi there,</p>
+          <p class="username">Morgan Oakley (@morgan)</p>
+        </div>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="article">
+        <div class="article-title"></div>
+      </div>
+      <div class="side-content">
+        <div class="announcement"></div>
+        <div class="trending"></div>
+      </div>
+    </div>
   </body>
 </html>
