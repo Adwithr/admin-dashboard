@@ -9,7 +9,6 @@ $sidebar-text-clr: #ffffff;
   background-color: #8b5cf6;
   justify-content: start;
   padding: 25px;
-  height: 100vh;
 }
 
 .navs {
@@ -33,18 +32,14 @@ $sidebar-text-clr: #ffffff;
   transform: scale(-1, 1);
 }
 
-img {
-  width: 25px;
-  height: 25px;
-}
-
 .nav-icons {
   filter: invert(1) grayscale(1);
 }
 
 .dashboard {
-  font-size: 27px;
+  font-size: 29px;
   font-weight: bolder;
+  gap: 15px;
   .nav-icons {
     height: 42px;
     width: 42px;

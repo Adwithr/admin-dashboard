@@ -1,6 +1,11 @@
 .header {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  background-color: hsl(0deg 0% 100%);
   grid-column: 2/3;
   grid-row: 1/2;
+  padding: 1em;
+  gap: 1em;
 }
 
 .header-row-one {
@@ -9,4 +14,32 @@
 
 .header-row-two {
   display: flex;
+}
+
+.h-r-one-left,
+.h-r-one-right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.h-r-one-left {
+  flex: 1 1 auto;
+}
+
+.h-r-one-right {
+  flex: 0 1 auto;
+}
+
+#search-bar {
+  border: none;
+  background-color: hsl(214.29deg 31.82% 91.37%);
+  height: 25px;
+  border-radius: 4em;
+  padding: 5px;
+  flex: 1 1 auto;
+  margin-right: 10em;
+  &:focus {
+    outline: none;
+  }
 }
