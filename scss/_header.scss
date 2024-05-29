@@ -1,3 +1,5 @@
+@use "sidebar";
+
 .header {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -8,8 +10,7 @@
   gap: 1em;
 }
 
-.header-row-one,
-.header-row-two {
+.header-row-one {
   display: flex;
 }
 
@@ -24,6 +25,22 @@
   gap: 1em;
 }
 
+#search,
+#notifications {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: hsl(0, 0%, 95%);
+  }
+  &:active {
+    background-color: hsl(0, 0%, 99%);
+  }
+}
+
 .h-r-one-right {
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -36,8 +53,10 @@
   }
   .username {
     margin-left: -0.5em;
+    margin-right: 0.7em;
     font-weight: bold;
     font-size: large;
+    cursor: default;
   }
   #notifications {
     margin-right: -0.3em;
@@ -58,11 +77,57 @@
   }
 }
 
-.h-r-two-left {
-  display: flex;
+.header-row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .h-r-two-left,
 .h-r-two-right {
   display: flex;
+}
+
+.h-r-two-left {
+  align-items: center;
+  gap: 1em;
+  margin-left: 0.5em;
+  .profile-image {
+    width: 3.7em;
+    height: 3.7em;
+  }
+}
+
+.welcome-text {
+  font-weight: bold;
+  font-size: 14.5px;
+}
+
+.welcome-text + .username {
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.h-r-two-right {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  button {
+    justify-self: end;
+    background-color: sidebar.$primary-clr;
+    color: sidebar.$white;
+    border: none;
+    height: 38px;
+    width: 90px;
+    border-radius: 3em;
+    font-weight: bold;
+    font-size: 14.5px;
+    &:hover {
+      background-color: hsl(258, 90%, 62%); // CHANGE THIS IF CHANGED THE PRIMARY COLOR
+    }
+  }
+}
+
+.profile-image,
+.welcome .username {
+  cursor: pointer;
 }
