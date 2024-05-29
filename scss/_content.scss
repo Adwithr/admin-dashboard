@@ -4,6 +4,7 @@
   grid-row: 2/3;
   grid-template-columns: 4fr 1.2fr;
   background-color: hsl(214.29deg 31.82% 91.37%);
+  padding: 1em;
 }
 
 .article {
@@ -20,14 +21,16 @@
 
 .article-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-template-rows: repeat(3, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  // grid-template-rows: repeat(3, minmax(200px, 2fr));
+  gap: 18px;
 }
 
 .cards {
   height: 200px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .announcement {
