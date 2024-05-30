@@ -8,6 +8,7 @@
   background-color: #8b5cf6;
   justify-content: start;
   padding: 25px;
+  min-height: 100vh;
 }
 
 .navs {
@@ -159,7 +160,7 @@
 }
 
 .welcome-text + .username {
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 21px;
 }
 
@@ -178,9 +179,13 @@
   border-radius: 3em;
   font-weight: bold;
   font-size: 14.5px;
+  transition: background-color 0.2s ease;
 }
 .h-r-two-right button:hover {
   background-color: hsl(258, 90%, 62%);
+}
+.h-r-two-right button:active {
+  background-color: hsl(258, 90%, 69%);
 }
 
 .profile-image,
@@ -198,7 +203,8 @@
   grid-row: 2/3;
   grid-template-columns: 4fr 1.2fr;
   background-color: hsl(214.29, 31.82%, 91.37%);
-  padding: 1em;
+  padding: 2em 1em 1em 1.1em;
+  gap: 1em;
 }
 
 .article {
@@ -213,28 +219,83 @@
   flex-direction: column;
 }
 
+.article-title,
+.announcement-title,
+.trending-title {
+  font-weight: 501;
+  font-size: 18.5px;
+}
+
 .article-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  gap: 18px;
+  gap: 20px 18px;
+  margin-top: calc(1em - 5px);
 }
 
 .cards {
-  height: 200px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  border-left: 8px solid hsl(41.91, 86.9%, 55.1%);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: hsl(0, 0%, 39%);
+  font-size: 15px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  gap: 1em;
+}
+.card-icons img {
+  cursor: pointer;
 }
 
 .announcement {
-  display: flex;
+  display: grid;
   flex-direction: column;
 }
 
 .announcement-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: white;
+  margin-top: calc(1em - 5px);
+  border-radius: 8px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2em;
+}
+
+.ann-card-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ann-card-text {
+  color: hsl(0, 0%, 39%);
+  font-size: 12.5px;
+}
+
+.ann-cards:nth-of-type(2) {
+  border-top: 1px solid hsl(0, 0%, 82.35%);
+  border-bottom: 1px solid hsl(0, 0%, 82.35%);
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.ann-cards:nth-of-type(3) {
+  padding-top: 0.8em;
 }
 
 .trending {
@@ -270,6 +331,9 @@ body {
   grid-template-columns: 1.2fr 5fr;
   grid-template-rows: auto 1fr;
   font-family: Roboto, sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 img {

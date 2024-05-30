@@ -16,6 +16,9 @@ body {
   grid-template-columns: 1.2fr 5fr;
   grid-template-rows: auto 1fr;
   font-family: Roboto, sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 img {

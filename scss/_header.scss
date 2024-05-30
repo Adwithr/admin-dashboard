@@ -103,7 +103,7 @@
 }
 
 .welcome-text + .username {
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 21px;
 }
 
@@ -121,8 +121,12 @@
     border-radius: 3em;
     font-weight: bold;
     font-size: 14.5px;
+    transition: background-color 0.2s ease;
     &:hover {
       background-color: hsl(258, 90%, 62%); // CHANGE THIS IF CHANGED THE PRIMARY COLOR
+    }
+    &:active {
+      background-color: hsl(258, 90%, 69%); // THIS TOO
     }
   }
 }
