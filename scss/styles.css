@@ -63,6 +63,8 @@
   grid-row: 1/2;
   padding: 1em 4em 1em 3em;
   gap: 1em;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .header-row-one {
@@ -217,6 +219,7 @@
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
+  gap: 2em;
 }
 
 .article-title,
@@ -241,6 +244,7 @@
   padding: 2em;
   border-radius: 8px;
   border-left: 8px solid hsl(41.91, 86.9%, 55.1%);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
@@ -275,6 +279,7 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 2em;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ann-card-title {
@@ -304,18 +309,40 @@
 }
 
 .trending-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: white;
+  padding: 1.3em;
+  margin-top: calc(1em - 5px);
+  border-radius: 8px;
+  gap: 1.5em;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .trending-accs {
   display: flex;
   flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.acc-pfp {
+  height: 43px;
+  width: 43px;
 }
 
 .acc-name {
   display: flex;
   flex-direction: column;
+}
+
+.acc-title {
+  font-size: 16px;
+}
+
+.project-name {
+  color: hsl(0, 0%, 39%);
+  font-size: 14.5px;
 }
 
 * {
