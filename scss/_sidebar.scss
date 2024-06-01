@@ -43,10 +43,12 @@ $primary-clr: #8b5cf6;
   font-weight: bolder;
   gap: 15px;
   .nav-icons {
+    cursor: pointer;
     height: 42px;
     width: 42px;
   }
   p:hover {
+    cursor: pointer;
     border-bottom: none;
   }
 }

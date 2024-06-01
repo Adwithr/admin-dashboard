@@ -42,10 +42,12 @@
   gap: 15px;
 }
 .dashboard .nav-icons {
+  cursor: pointer;
   height: 42px;
   width: 42px;
 }
 .dashboard p:hover {
+  cursor: pointer;
   border-bottom: none;
 }
 
@@ -182,6 +184,7 @@
   font-weight: bold;
   font-size: 14.5px;
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 .h-r-two-right button:hover {
   background-color: hsl(258, 90%, 62%);
